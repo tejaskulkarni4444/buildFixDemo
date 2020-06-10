@@ -12,7 +12,6 @@
     "dev:build-client": "webpack --config webpack.client.js --watch",
     "dev:server": "nodemon --watch build --exec node build/bundle.js"
   },
-  "proxy":"https://5ecd617f7c528e00167cd462.mockapi.io",
   "author": "Ashley Bibizadeh",
   "license": "MIT",
   "dependencies": {
