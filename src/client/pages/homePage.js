@@ -2,8 +2,49 @@ import React, {Component} from 'react';
 import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import {Link, NavLink} from 'react-router-dom';
+import axios from 'axios'
 
 class HomePage extends Component {
+  componentWillMount(){
+    axios.get('/services').then(res =>{
+      console.log(res)
+    })
+    // axios.get(`https://5ecd617f7c528e00167cd462.mockapi.io/services`)
+    // .then(res => {
+    //   if(res){
+    //     console.log(res)
+    //       // this.setState(state => { 
+    //       //     state.serviceList.data = res.data
+    //       //     return state
+    //       // },()=> console.log(this.state.serviceList))
+    //   }
+    // })
+  }
+  // componentDidMount(){
+  //   axios.get(`https://5ecd617f7c528e00167cd462.mockapi.io/services`)
+  // .then(res => {
+  //   if(res){
+  //     console.log(res)
+  //       // this.setState(state => { 
+  //       //     state.serviceList.data = res.data
+  //       //     return state
+  //       // },()=> console.log(this.state.serviceList))
+  //   }
+  // })
+  // }
+
+  // getData () {
+  //   axios.get(`https://5ecd617f7c528e00167cd462.mockapi.io/services`)
+  // .then(res => {
+  //   if(res){
+  //     console.log(res)
+  //       // this.setState(state => { 
+  //       //     state.serviceList.data = res.data
+  //       //     return state
+  //       // },()=> console.log(this.state.serviceList))
+  //   }
+  // })
+  // }
 
     head(){
       return (

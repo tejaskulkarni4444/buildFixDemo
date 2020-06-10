@@ -50,6 +50,9 @@ app.get(['/*/:param', '*'], (req, res) => {
     });
     
 });
+app.get('/services',(req,re) =>{
+    res.send(res)
+})
 
 app.post('/sendmail', (req, response) => {
 

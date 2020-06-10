@@ -12,10 +12,11 @@
     "dev:build-client": "webpack --config webpack.client.js --watch",
     "dev:server": "nodemon --watch build --exec node build/bundle.js"
   },
+  "proxy":"https://5ecd617f7c528e00167cd462.mockapi.io",
   "author": "Ashley Bibizadeh",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.16.2",
+    "axios": "^0.19.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
